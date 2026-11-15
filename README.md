@@ -5,9 +5,9 @@
 
 I build APIs for everyday workflows and explore how retrieval can ground AI answers in source documents.
 
-<a href="https://github.com/Girish9777"><img src="./assets/github.svg" alt="GitHub · Girish9777" height="28"></a>
-<a href="https://www.linkedin.com/in/girish-bansal-dev/"><img src="./assets/linkedin.svg" alt="LinkedIn · Girish Bansal" height="28"></a>
-<a href="https://leetcode.com/u/GirishAlgo/"><img src="./assets/leetcode.svg" alt="LeetCode · GirishAlgo" height="28"></a>
+<a href="https://github.com/Girish9777"><img src="./assets/github.svg?v=2" alt="GitHub · Girish9777" height="28"></a>
+<a href="https://www.linkedin.com/in/girish-bansal-dev/"><img src="./assets/linkedin.svg?v=2" alt="LinkedIn · Girish Bansal" height="28"></a>
+<a href="https://leetcode.com/u/GirishAlgo/"><img src="./assets/leetcode.svg?v=2" alt="LeetCode · GirishAlgo" height="28"></a>
 </div>
 
 ## `whoami.cpp`
