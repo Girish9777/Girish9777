@@ -1,0 +1,36 @@
+name: Refresh contribution landscape
+on:
+  schedule:
+    - cron: '17 2 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/profile-3d.yml', 'scripts/contributions.py']
+permissions: {}
+concurrency:
+  group: profile-landscape
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: main
+      - name: Render GitHub calendar
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -o pipefail
+          gh api graphql -F login="$GITHUB_REPOSITORY_OWNER" -f query='query($login:String!){user(login:$login){contributionsCollection{contributionCalendar{weeks{contributionDays{date contributionLevel}}}}}}' | python3 scripts/contributions.py
+      - name: Publish changed landscape
+        run: |
+          git add -- assets/contributions.svg
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Refresh contribution landscape'
+            git push origin HEAD:main
+          fi
