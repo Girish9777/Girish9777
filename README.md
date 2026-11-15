@@ -42,7 +42,7 @@ A personal finance web app with account-based balance tracking. The Flask applic
 
 ## Engineering toolkit
 
-<p>
+<p align="center">
 <img src="./assets/cplusplus.svg" width="38" height="38" alt="C++"> &nbsp;
 <img src="./assets/python.svg" width="38" height="38" alt="Python"> &nbsp;
 <img src="./assets/fastapi.svg" width="38" height="38" alt="FastAPI"> &nbsp;
