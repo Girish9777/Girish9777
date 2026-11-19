@@ -3,7 +3,7 @@
 <desc id="d">Each tile represents a day. Height and color follow GitHub activity levels.</desc>
 <rect width="1140" height="420" rx="18" fill="#0c192c"/>
 <g font-family="Arial,sans-serif"><text x="36" y="48" font-size="22" fill="#e1eefb">Contribution landscape</text>
-<text x="36" y="75" font-size="16" fill="#9fb9d4">2025-11-16 — 2026-11-18</text></g>
+<text x="36" y="75" font-size="16" fill="#9fb9d4">2025-11-16 — 2026-11-19</text></g>
 <defs>
 <g id="tile0" fill="#233c55">
 <path d="M-16 2l16 4 16 -8v2l-16 8 -16 -4z"/>
@@ -399,4 +399,5 @@
 <use href="#tile0" x="1071" y="325"/>
 <use href="#tile0" x="1053" y="334"/>
 <use href="#tile0" x="1035" y="343"/>
+<use href="#tile1" x="1017" y="343"/>
 </svg>
